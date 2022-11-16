@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width; initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <link href="./styles/style.css" rel="stylesheet">
+    <link href="./styles/media.css" rel="stylesheet">
+    <title>IP TRACKER</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.2/dist/leaflet.css"
+        integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14=" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.9.2/dist/leaflet.js"
+        integrity="sha256-o9N1jGDZrf5tS+Ft4gbIK7mYMipq9lqpVJ91xHSyKhg=" crossorigin=""></script>
+</head>
+
+<body>
+    <section class="ip-tracker">
+        <div class="ip-tracker__head">
+            <a class="ip-tracker__title" href="#">
+                IP Address Tracker
+            </a>
+
+            <div class="ip-tracker__input-wrapper">
+                <input type="text" placeholder="Search for any IP address or domain" class="ip-tracker__input">
+                <button class="ip-tracker__button">
+                    <img class="ip-tracker__button-img" src="./images/icon-arrow.svg">
+                </button>
+            </div>
+
+            <ul class="ip-info">
+                <li class="ip-info__details">
+                    <p class="ip-info-title">IP ADDRESS</p>
+                    <p class="ip-info-subtitle ip-info-subtitle--ip">NOT FOUND</p>
+                </li>
+
+                <li class="ip-info__details">
+                    <p class="ip-info-title">LOCATION</p>
+                    <p class="ip-info-subtitle ip-info-subtitle--location">NOT FOUND</p>
+                </li>
+
+                <li class="ip-info__details">
+                    <p class="ip-info-title">TIMEZONE</p>
+                    <p class="ip-info-subtitle ip-info-subtitle--timezone">NOT FOUND</p>
+                </li>
+
+                <li class="ip-info__details">
+                    <p class="ip-info-title">ISP</p>
+                    <p class="ip-info-subtitle ip-info-subtitle--isp">NOT FOUND</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="map" class="map">
+    </section>
+
+    <script src="./scripts/index.js"></script>
+</body>
+
+</html>
